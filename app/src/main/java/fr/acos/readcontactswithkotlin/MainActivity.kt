@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity(),AnkoLogger {
         while (contacts.moveToNext())
         {
             //Récupération de l'identifiant du contact
-            val contactId = contacts.getString(contacts.getColumnIndex(ContactsContract.Contacts.NAME_RAW_CONTACT_ID))
+            val contactId = contacts.getString(contacts.getColumnIndex(ContactsContract.Contacts._ID))
             //Récupération de son nom principale
             val contactNom = contacts.getString(contacts.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME_PRIMARY))
             //Affichage dans les logs
